@@ -1,0 +1,57 @@
+:root {
+  --var-colorAzul: cornflowerblue;
+}
+
+.conteiner {
+  margin: 0;
+  padding: 0;
+}
+
+.celulas {
+  background-color: var(--var-colorAzul);
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 5px;
+}
+
+.controles {
+  background-color: crimson;
+  width: calc(100% - 10px);
+  margin: 0 5px 0 5px;
+  text-align: center;
+  position: relative;
+}
+
+.controles button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: var(--var-colorAzul);
+  font-weight: 700;
+}
+
+.x {
+  text-align: center;
+}
+
+.x::after {
+  content: "x";
+  font-size: 7rem;
+  line-height: 50%;
+}
+
+.o {
+  text-align: center;
+}
+
+.o::after {
+  content: "o";
+  font-size: 7rem;
+  line-height: 50%;
+}
