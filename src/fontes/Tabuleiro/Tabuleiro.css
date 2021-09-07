@@ -5,7 +5,18 @@
 .conteiner {
   margin: 0;
   padding: 0;
-  z-index: 10;
+}
+
+.conteiner h2 {
+  background-color: tomato;
+  width: calc(100% - 10px);
+  margin: 0 5px 0 5px;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
 .celulas {
@@ -21,21 +32,27 @@
   background-color: crimson;
   width: calc(100% - 10px);
   margin: 0 5px 0 5px;
-  text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
 }
 
-.controles button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.controles h3 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.botaoResetar {
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
   border: none;
   color: var(--var-colorAzul);
   font-weight: 700;
+}
+
+.botaoResetar.fechar {
+  visibility: hidden;
 }
 
 .controles button:hover {

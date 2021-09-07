@@ -1,10 +1,10 @@
 import "./App.css";
-import Tabuleiro from "./fontes/Tabuleiro/Tabuleiro";
+import Rota from "./componentes/Rota";
 
 function App() {
   return (
     <div className="App">
-      <Tabuleiro />
+      <Rota />
     </div>
   );
 }
