@@ -5,6 +5,7 @@
 .conteiner {
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 .celulas {
@@ -13,6 +14,7 @@
   height: 100px;
   float: left;
   margin: 5px;
+  cursor: pointer;
 }
 
 .controles {
@@ -36,22 +38,26 @@
   font-weight: 700;
 }
 
-.x {
+.controles button:hover {
+  background-color: var(--var-colorAzul);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.celulas h1 {
   text-align: center;
-}
+  font-size: 3.8rem;
+  cursor: pointer;
 
-.x::after {
-  content: "x";
-  font-size: 7rem;
-  line-height: 50%;
-}
-
-.o {
-  text-align: center;
-}
-
-.o::after {
-  content: "o";
-  font-size: 7rem;
-  line-height: 50%;
+  /*       Código ABAIXO
+   Prevenção de seleção,ou seja, quando clicar na 
+  ela nao é selecionada com a cor azul padrão de seleção
+  */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
